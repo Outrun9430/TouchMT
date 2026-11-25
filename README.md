@@ -81,3 +81,7 @@ On Linux with MinGW-w64:
 ```
 
 This produces `touchmt-x64.exe` and `touchmt-x86.exe`, linked statically with subsystem version 5.02 / 5.01 so they load on XP.
+
+## License
+
+MIT. See [LICENSE](LICENSE). Release history is in [CHANGELOG.md](CHANGELOG.md).
