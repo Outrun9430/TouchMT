@@ -36,16 +36,15 @@ On XP x64, 3M MicroTouch MT 7 (both the late-2009 build and 7.12.6) crashed with
 
 ### Development history
 
-| rev | change |
-|---|---|
-| r1 | First version: Format Tablet parser, 4-point affine calibration, `SendInput` injection |
-| r2 | Fixed the debug console (direct `WriteConsoleA` plus `touchmt.log`); live data on the calibration screen; touch-bit auto-detection |
-| r3 | Found that the controller was in 7-bit mode and rejected `FT`; added `PN81` switching and a Format Decimal fallback with gap-based lift-off. **First successful calibration.** |
-| r4 | Corner reach: targets moved closer to the edges, `edge_snap`, and `--reset-controller` |
-| r5 | Replaced the 4-point calibration with a 16-point grid and smooth non-linear mapping |
-| r6 | Debug log showed the controller clipping at raw 0,0 short of the edge; added `--widen-controller` (CX rescale) |
-| r7 | Debug log showed the glass physically ends about 30 px short of the image under the bezel; added the border-trace edge stretch. **Taskbar, Start button and window controls reachable.** |
-| r8 | Default Beep on each accepted calibration point; README, build script and MIT license for public release |
+- **rev** change
+- **r1** First version: Format Tablet parser, 4-point affine calibration, `SendInput` injection
+- **r2** Fixed the debug console (direct `WriteConsoleA` plus `touchmt.log`); live data on the calibration screen; touch-bit auto-detection
+- **r3** Found that the controller was in 7-bit mode and rejected `FT`; added `PN81` switching and a Format Decimal fallback with gap-based lift-off. **First successful calibration.**
+- **r4** Corner reach: targets moved closer to the edges, `edge_snap`, and `--reset-controller`
+- **r5** Replaced the 4-point calibration with a 16-point grid and smooth non-linear mapping
+- **r6** Debug log showed the controller clipping at raw 0,0 short of the edge; added `--widen-controller` (CX rescale)
+- **r7** Debug log showed the glass physically ends about 30 px short of the image under the bezel; added the border-trace edge stretch. **Taskbar, Start button and window controls reachable.**
+- **r8** Default Beep on each accepted calibration point; README, build script and MIT license for public release
 
 ### Recommended setup
 
