@@ -14,7 +14,6 @@ On XP x64, 3M MicroTouch MT 7 (both the late-2009 build and 7.12.6) crashed with
 - The `OI` command returned `A30600` (firmware 6.00).
 - The `UV` command returned `QMV***00`: an EX-family serial capacitive controller with no self-test errors.
 - The controller had been configured by the OEM for **7-bit serial**, so every byte arrives with bit 7 set on an 8N1 port, and it rejects the binary `FT` (Format Tablet) command.
-- Gotcha along the way: COM1 was claimed by an old ImageWriter II printer driver, which made terminal programs fail with "unable to open COM1". This may also have contributed to the original bluescreens.
 
 ### Features
 
