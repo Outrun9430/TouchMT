@@ -36,7 +36,6 @@ On XP x64, 3M MicroTouch MT 7 (both the late-2009 build and 7.12.6) crashed with
 
 ### Development history
 
-- **rev** change
 - **r1** First version: Format Tablet parser, 4-point affine calibration, `SendInput` injection
 - **r2** Fixed the debug console (direct `WriteConsoleA` plus `touchmt.log`); live data on the calibration screen; touch-bit auto-detection
 - **r3** Found that the controller was in 7-bit mode and rejected `FT`; added `PN81` switching and a Format Decimal fallback with gap-based lift-off. **First successful calibration.**
